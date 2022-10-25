@@ -16,7 +16,10 @@ body {
   position: relative;
   overflow: hidden;
 }
-
+audio, embed {
+  position: absolute;
+  z-index: -9999;
+}
 .container div.six {
   top: 10vh;
   z-index: 1;
