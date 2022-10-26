@@ -56,6 +56,15 @@ const animationTimeline = () => {
   const tl = new TimelineMax();
 
   tl
+  .to(
+    ".btn",
+    0.7,
+    {
+      opacity: 0,
+      y: 10
+    },
+    "+=0.5"
+  )
     .to(".container", 0.1, {
       visibility: "visible"
     })
@@ -304,4 +313,3 @@ const animationTimeline = () => {
 };
 
 // Run fetch and animation in sequence
-fetchData();
